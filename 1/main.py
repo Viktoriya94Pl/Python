@@ -11,10 +11,10 @@ print('The result is: ', summa)
 
 number = int(input('Enter number of cranes: '))
 if(number % 6 == 0 and number % 2 == 0):
-    result1 = number / 6
+    result1 = number // 6
     result2 = result1
     result3 = (result1 + result2) * 2
-    print('Pete has:',round(result1), 'Sergey has:', round(result2), 'Kate has:', round(result3))
+    print('Pete has:',(result1), 'Sergey has:', (result2), 'Kate has:', (result3))
 else:
     print('TRY AGAIN')
 
@@ -38,7 +38,7 @@ length = int(input('Enter the length: '))
 slices = int(input('How much slices do you need: '))
 if slices >= width * length:
     print('Not enough choco')
-elif slices % width == 00 or slices % length == 00:
+elif slices % width == 0 or slices % length == 0:
     print("YES")
 else:
     print('NO')
